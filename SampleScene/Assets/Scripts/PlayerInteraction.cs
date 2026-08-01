@@ -21,6 +21,13 @@ public class PlayerInteraction : MonoBehaviour
     
     foreach (var collider in hitColliders)
     {
+        MapPickup map = collider.GetComponentInParent<MapPickup>();
+        if (map != null)
+        {
+            map.PickupMap();
+            break;
+        }
+
         TorchPickup torch = collider.GetComponentInParent<TorchPickup>();
         if (torch != null)
         {

@@ -4,7 +4,7 @@ public class Lever : MonoBehaviour
 {
     public bool pulled = false;
     public float smooth = 3f;
-    float pulledAngle = -45f;
+    float pulledAngle = -90f;
     float restAngle = 0f;
 
     public AudioSource asource;
